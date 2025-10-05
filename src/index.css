@@ -1,0 +1,134 @@
+/* === General Styling === */
+body {
+  
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #f5faff, #e0f0ff, #d1e8ff);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+
+.App {
+  background-color: white;
+  padding: 25px 30px;
+  border-radius: 10px;
+  width: 350px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #1e3a8a;
+}
+
+h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.options {
+  list-style: none;
+  padding: 0;
+}
+
+.option-label {
+  display: block;
+  background-color: #f1f5f9;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.option-label:hover {
+  background-color: #dbeafe;
+}
+
+
+.nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+button {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover:not(:disabled) {
+  background-color: #1e40af;
+}
+
+button:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+.nav-buttons p {
+  width: 100%;
+  text-align: center;
+  color: #555;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+.summary {
+  text-align: center;
+}
+
+.summary h2 {
+  margin-bottom: 15px;
+  color: #1e3a8a;
+}
+
+.summary-item {
+  background-color: #f9fafb;
+  border: 1px solid #ddd;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.correct {
+  background-color: #d1fae5;
+}
+
+.incorrect {
+  background-color: #fee2e2;
+}
+
+.summary button {
+  margin-top: 20px;
+  background-color: #10b981;
+}
+
+.summary button:hover {
+  background-color: #059669;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 20px;
+  }
+  .App {
+    padding: 20px;
+  }
+  h1 {
+    font-size: 20px;
+  }
+}
